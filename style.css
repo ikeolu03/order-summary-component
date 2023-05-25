@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 375px;
+    max-width: 90%;
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+.flex-group{
+    display: flex;
+    justify-content: space-between; 
+}
+
+img{
+    width: 100%;
+}
+
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.order-info{
+    text-align: center;
+    padding: 2em .5em;
+    width: 90%;
+}
+
+.order-title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.order-summary{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1em .7em;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-container{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: .7em;
+    padding: 1.125em 1em;
+    margin-top: .5em;
+}
+
+.annual-container{
+    margin-top: .25em;
+}
+
+.music-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-container p{
+    margin-bottom: .2em;
+}
+
+.plan-type,
+.change{
+    font-weight: 700;
+}
+
+.plan-type{
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-price{
+    color: hsl(224, 23%, 55%);
+}
+
+.change{
+    font-size: .85em;
+}
+
+.change:hover{
+    color: hsla(245, 75%, 52%, .8);
+    text-decoration: none;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-dark{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    padding: 1em 0;
+    border-radius: .7em;
+    margin: 1.5em 0 1em;
+}
+
+.btn-light{
+    background: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.btn-dark:hover{
+    background-color: hsla(245, 75%, 52%, .6);
+}
+
+.btn-light:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution{
+    font-size: .7rem;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .container{
+        width: 400px;
+    }
+
+    .order-title{
+        font-size: 1.75rem;
+    }
+
+    .order-info{
+        padding: 2em 1em;
+    }
+
+    .order-summary{
+        font-size: 1rem;
+    }
+}
